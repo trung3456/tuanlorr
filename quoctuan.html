@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tuan.css">
+    <title>T4L</title>
+</head>
+<body>
+    <div class="all ">
+        <p class="first">T4L <i class='bx bx-cross bx-spin last-icon' ></i></p>
+
+        <div class="content-card ">
+            <div class="love-bt">
+                <i class='bx bxs-heart heart-icon-full hide'></i>
+                <i class='bx bx-heart heart-icon'></i></div>
+            <div class="plus-bt ">
+                <i class='bx bx-phone phone-icon'></i>
+            </div>
+            <div class="number-bt hide2">
+                <p class="phone-number ">0868 792 717 </p>
+            </div>
+            <div class="title-1">
+                <p class="text-1">LƯƠNG NGUYỄN QUỐC TUẤN</p>
+            </div>
+
+            <div class="img-space">
+                <div class="main-img">
+                </div>
+            </div>
+
+            <div class="title-2">
+                <p class="text-2">quoctuan364</p>
+            </div>
+
+            <div class="content">
+                <ul>
+                    <li>
+                        <a class="link" href="https://www.facebook.com/quoctuan.luongnguyen.77">
+                            <button class="li-bt1 bt1">Facebook</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://www.instagram.com/q.tuan364/">
+                            <button class="li-bt1 bt2">Instagram</button>
+                        </a>
+                    </li>
+                    <li>
+                        
+                            <button class="li-bt2 gm-bt1">Gmail</button>
+                        
+                    </li>
+                    <li>
+                            <button class="li-bt2 gm-bt2 hide1">tuanisme362004@gmail.com</button>
+                        
+                    </li>
+                </ul>
+                 <a href="https://www.tiktok.com/@_quoctuan364">
+                    <button class="big-bt"><i class='bx bxl-tiktok tiktok-icon'></i></button>
+                </a> 
+            </div>
+            
+        </div>
+
+       
+
+    </div>
+
+    <script>
+        const heart_icon = document.querySelector(".heart-icon")
+        const heart_full = document.querySelector(".heart-icon-full")
+        const gmail1 = document.querySelector(".gm-bt1")
+        const gmail2 = document.querySelector(".gm-bt2")
+        const phone_bt = document.querySelector(".plus-bt")
+        const number_bt = document.querySelector(".number-bt")
+
+        heart_icon.addEventListener("click",function(){
+            heart_full.classList.remove("hide")
+            heart_icon.classList.add("hide")
+        })
+
+        heart_full.addEventListener("click",function(){
+            heart_full.classList.add("hide")
+            heart_icon.classList.remove("hide")
+        })
+
+        gmail1.addEventListener("click",function(){
+            gmail2.classList.remove("hide1")
+            gmail1.classList.add("hide1")
+        })
+
+        gmail2.addEventListener("click",function(){
+            gmail2.classList.add("hide1")
+            gmail1.classList.remove("hide1")
+        })
+
+        phone_bt.addEventListener("click",function(){
+            phone_bt.classList.add("hide2")
+            number_bt.classList.remove("hide2")
+        })
+
+        number_bt.addEventListener("click",function(){
+            phone_bt.classList.remove("hide2")
+            number_bt.classList.add("hide2")
+        })
+
+    </script>
+
+</body>
+</html>
